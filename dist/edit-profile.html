@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <main>
+
+        <!-- header -->
+        <header class="bg-white sticky top-0 z-50 py-2">
+            <div class="mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <a href="javascript:history.back()" class="inline-flex items-center justify-center w-10 h-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M7.55247 10.0003L14.6036 3.10063C15.1074 2.60696 15.1349 1.77806 14.6636 1.24903C14.1936 0.719995 13.3999 0.692496 12.8974 1.18617L5.77124 8.16047C5.27375 8.6476 5 9.29972 5 10.0003C5 10.7009 5.27375 11.353 5.76999 11.8401L12.8962 18.8144C13.1374 19.0501 13.4437 19.1667 13.7499 19.1667C14.0849 19.1667 14.4174 19.0279 14.6624 18.7516C15.1336 18.2225 15.1061 17.3949 14.6024 16.9L7.55247 10.0003Z"
+                                fill="#6B7280" />
+                        </svg>
+                    </a>
+                    <div class="text-base text-gray-500 uppercase">PROFILE DETAILS</div>
+                    <div class="w-10"></div>
+                </div>
+            </div>
+
+        </header>
+        <!-- ./ End Header -->
+
+        <div class="md:bg-gray-50  min-h-screen flex flex-col md:px-4 py-5 md:py-12 ">
+            <div class="w-full sm:max-w-3xl mt-0 m-auto p-4">
+                
+
+                <div class="bg-white rounded-lg p-5 md:p-8 space-y-4 md:space-y-6 sm:p-8 md:shadow-md">
+                    <h1 class="text-3xl font-bold text-gray-900 text-center">Edit Your Details</h1>
+                    
+                    <form id="editProfile_form" action="#">
+                        <div class="flex flex-wrap gap-y-4 md:gap-y-6 md:-mx-3">
+                            <div class="w-full md:w-6/12 md:px-3">
+                                <label for="career" class="block mb-2 text-sm font-medium text-gray-900">Career</label>
+                                <input type="text" name="career" id="career" class="bg-white border border-gray-300 text-gray-900 rounded-lg outline-none block w-full p-2.5" required="">
+                            </div>
+                            <div class="w-full md:w-6/12 md:px-3">
+                                <label for="birthplace" class="block mb-2 text-sm font-medium text-gray-900">Birthplace</label>
+                                <input type="text" name="birthplace" id="birthplace" class="bg-white border border-gray-300 text-gray-900 rounded-lg outline-none block w-full p-2.5" required="">
+                            </div>
+                            <div class="w-full md:px-3">
+                                <label for="school-name" class="block mb-2 text-sm font-medium text-gray-900">School Name</label>
+                                <input type="text" name="school-name" id="school-name" class="bg-white border border-gray-300 text-gray-900 rounded-lg outline-none block w-full p-2.5" required="">
+                                <div class="text-gray-500 text-sm font-light mt-1">i.e., University of Toronto, Santa Monica College, Lincoln Tech, Central High School</div>
+                            </div>
+                            <div class="w-full md:px-3">
+                                <label for="bio" class="block mb-2 text-sm font-medium text-gray-900">Bio</label>
+                                <textarea type="text" name="bio" id="bio" rows="5" class="bg-white border border-gray-300 text-gray-900 rounded-lg outline-none block w-full p-2.5" placeholder="Write a short bio about yourself"></textarea>
+                                <div class="bio_limit text-gray-500 text-sm font-light mt-1">0/150</div>
+                            </div>
+                            <div class="w-full md:px-3">
+                                <label class="block mb-2 text-sm font-medium text-gray-900">Your Interests</label>
+                                <div class="text-red-500 text-sm">Please select at least one interest</div>
+                                <div class="grid grid-cols-2 md:grid-cols-3 gap-2 py-4">
+                                    <div class="flex items-start gap-2">
+                                        <input id="TravelAdventure" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="TravelAdventure" class="text-sm text-gray-900">Travel & Adventure</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="FoodDrink" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="FoodDrink" class="text-sm text-gray-900">Food & Drink</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="SportsFitness " type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="SportsFitness " class="text-sm text-gray-900">Sports & Fitness </label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="music" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="music" class="text-sm text-gray-900">Music</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="MoviesandTV" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="MoviesandTV" class="text-sm text-gray-900">Movies and TV</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="ArtsCrafts" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="ArtsCrafts" class="text-sm text-gray-900">Arts & Crafts</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="pets" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="pets" class="text-sm text-gray-900">Pets</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="books" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="books" class="text-sm text-gray-900">Books</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="games" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="games" class="text-sm text-gray-900">Games</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="HomeGarden" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="HomeGarden" class="text-sm text-gray-900">Home & Garden</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="FaithSpirituality" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="FaithSpirituality" class="text-sm text-gray-900">Faith & Spirituality</label>
+                                    </div>
+                                    <div class="flex items-start gap-2">
+                                        <input id="volunteering" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400" required="">
+                                        <label for="volunteering" class="text-sm text-gray-900">Volunteering</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full md:px-3 mt-4 text-center">
+                                <button type="submit" class="w-full sm:max-w-60 text-white bg-orange-500 hover:bg-sky-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Save Changes</button>
+                            </div>
+                        </div>
+                        
+                       
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>

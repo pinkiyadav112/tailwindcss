@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+label.radio_item input[type="radio"]:checked+.circle {
+    background: #fff;
+    border: 5px solid #44C7F3;
+}

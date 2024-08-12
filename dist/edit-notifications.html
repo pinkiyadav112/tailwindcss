@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <main>
+
+        <!-- header -->
+        <header class="bg-white sticky top-0 z-50 py-2">
+            <div class="mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <a href="javascript:history.back()" class="inline-flex items-center justify-center w-10 h-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M7.55247 10.0003L14.6036 3.10063C15.1074 2.60696 15.1349 1.77806 14.6636 1.24903C14.1936 0.719995 13.3999 0.692496 12.8974 1.18617L5.77124 8.16047C5.27375 8.6476 5 9.29972 5 10.0003C5 10.7009 5.27375 11.353 5.76999 11.8401L12.8962 18.8144C13.1374 19.0501 13.4437 19.1667 13.7499 19.1667C14.0849 19.1667 14.4174 19.0279 14.6624 18.7516C15.1336 18.2225 15.1061 17.3949 14.6024 16.9L7.55247 10.0003Z"
+                                fill="#6B7280" />
+                        </svg>
+                    </a>
+                    <div class="text-base text-gray-500 uppercase">NOTIFICATIONS</div>
+                    <div class="w-10"></div>
+                </div>
+            </div>
+
+        </header>
+        <!-- ./ End Header -->
+
+        <div class="md:bg-gray-50  min-h-screen flex flex-col md:px-4 py-5 md:py-12 ">
+            <div class="w-full sm:max-w-3xl mt-0 m-auto p-4">
+
+
+
+
+                <div class="bg-white rounded-lg p-5 md:p-8 space-y-4 md:space-y-6 sm:p-8 shadow-md">
+                    <h1 class="text-3xl font-bold text-gray-900 text-center mb-8">Edit Notifications</h1>
+
+                    <form id="edit_notifications_form" action="#">
+                        <div class="flex flex-wrap space-y-4 md:-mx-3">
+
+                            <div class="w-full md:px-3">
+                                <label class="block text-sm font-bold text-gray-900">Enter your current password</label>
+                                <label class="inline-flex cursor-pointer mt-3">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 dark:peer-focus:ring-sky-800 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-400"></div>
+                                    <span class="pt-[2px] ms-3 text-sm font-medium text-gray-900 dark:text-gray-700">Email notification</span>
+                                </label>
+                            </div>
+                            <div class="w-full md:px-3">
+                                <label class="inline-flex cursor-pointer ">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 dark:peer-focus:ring-sky-800 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-400"></div>
+                                    <span class="pt-[2px] ms-3 text-sm font-medium text-gray-900 dark:text-gray-700">SMS notification</span>
+                                </label>
+                            </div>
+                            <div class="w-full md:px-3">
+                                <label class="inline-flex cursor-pointer">
+                                    <input type="checkbox" value="" class="sr-only peer">
+                                    <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-sky-300 dark:peer-focus:ring-sky-800 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-400"></div>
+                                    <span class="pt-[2px] ms-3 text-sm font-medium text-gray-900 dark:text-gray-700">Email notification
+                                        <small class="block text-sm text-gray-500">Note: Requires installation. <a href="#" class="text-sky-400 underline">See the FAQ</a></small>
+                                    </span>
+                                </label>
+                                <div class="text-gray-500 text-sm font-light mt-1"></div>
+                            </div>
+                            <div class="w-full md:px-3">
+                                <label class="block text-sm font-bold text-gray-900">Notify me when:</label>
+                                <div class="flex items-start gap-2 mt-3">
+                                    <input id="Messagingwindowisending" type="checkbox"
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400">
+                                    <label for="Messagingwindowisending"
+                                        class="text-sm font-medium text-gray-900 dark:text-gray-700">Someone messages me</label>
+                                </div>
+                                <div class="flex items-start gap-2 mt-3">
+                                    <input id="Alertsrelatedtotheevent" type="checkbox"
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400">
+                                    <label for="Alertsrelatedtotheevent"
+                                        class="text-sm font-medium text-gray-900 dark:text-gray-700">Messaging window is ending</label>
+                                </div>
+                                <div class="flex items-start gap-2 mt-3">
+                                    <input id="TravelAdventure" type="checkbox"
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 mt-[2px] focus:ring-3 focus:ring-sky-400">
+                                    <label for="TravelAdventure"
+                                        class="text-sm font-medium text-gray-900 dark:text-gray-700">Alerts related to the event</label>
+                                </div>
+
+                            </div>
+                            <div class="w-full md:px-3">
+                                <label class="block text-sm font-bold text-gray-900">Frequency:</label>
+                                <p class="text-gray-900 mt-4">Choose how often you want to be notified.</p>
+                                <div class="flex flex-wrap items-center gap-4 mt-4">
+                                    <label for="dalyFrequency" class="radio_item flex items-center gap-2 cursor-pointer">
+                                        <input class="absolute opacity-0 -z-40" type="radio" id="dalyFrequency" name="frequency" />
+                                        <span class="circle bg-gray-50 border border-gray-300 rounded-full w-5 h-5 inline-flex"></span>
+                                        <span>Daily</span>
+                                    </label>
+                                    <label for="fourHrFrequency" class="radio_item flex items-center gap-2 cursor-pointer">
+                                        <input class="absolute opacity-0 -z-40" type="radio" id="fourHrFrequency" name="frequency" />
+                                        <span class="circle bg-gray-50 border border-gray-300 rounded-full w-5 h-5 inline-flex"></span>
+                                        <span>Every 4 hours</span>
+                                    </label>
+                                    <label for="hourFrequency" class="radio_item flex items-center gap-2 cursor-pointer">
+                                        <input class="absolute opacity-0 -z-40" type="radio" id="hourFrequency" name="frequency" />
+                                        <span class="circle bg-gray-50 border border-gray-300 rounded-full w-5 h-5 inline-flex"></span>
+                                        <span>Hourly</span>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="w-full md:px-3 ">
+                                <span class="w-full flex border-t-[2px] border-gray-100 border-solid"></span>
+                            </div>
+                            <div class="w-full md:px-3 mt-4 text-center">
+                                <button type="submit" class="w-full sm:max-w-60 text-white bg-orange-400 hover:bg-sky-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Save Changes</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+
+</html>
